@@ -1,4 +1,8 @@
 # 0.2.0
+
+## 0.3.0
+- Convert to namespace packaging.
+
 ## 0.2.2
 - BUGFIX change getattr of `neuropixel` to allow for stared imports
 

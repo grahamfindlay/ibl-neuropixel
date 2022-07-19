@@ -3,11 +3,11 @@ import numpy as np
 import scipy.signal
 import scipy.fft
 
-import neurodsp.fourier as fourier
-import neurodsp.utils as utils
-import neurodsp.voltage as voltage
-import neurodsp.cadzow as cadzow
-import neurodsp.smooth as smooth
+import ibl.neurodsp.fourier as fourier
+import ibl.neurodsp.utils as utils
+import ibl.neurodsp.voltage as voltage
+import ibl.neurodsp.cadzow as cadzow
+import ibl.neurodsp.smooth as smooth
 
 
 class TestSyncTimestamps(unittest.TestCase):

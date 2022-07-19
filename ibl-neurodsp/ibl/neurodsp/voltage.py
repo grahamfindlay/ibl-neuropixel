@@ -12,8 +12,8 @@ from joblib import Parallel, delayed, cpu_count
 import spikeglx
 import neuropixel
 
-import neurodsp.fourier as fourier
-import neurodsp.utils as utils
+import ibl.neurodsp.fourier as fourier
+import ibl.neurodsp.utils as utils
 
 
 def agc(x, wl=.5, si=.002, epsilon=1e-8, gpu=False):

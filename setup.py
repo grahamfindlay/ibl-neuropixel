@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
     require = [x.strip() for x in f.readlines() if not x.startswith('git+')]
 
 setuptools.setup(
-    name="ibl-neuropixel",
+    name="ibl-neurodsp",
     version="0.2.2",
     author="The International Brain Laboratory",
     description="Collection of tools for Neuropixel 1.0 and 2.0 probes data",
@@ -23,8 +23,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=require,
-    package_dir={'': 'src'},
-    packages=setuptools.find_packages(where="src", exclude=['tests']),
+    package_dir={'': 'ibl-neurodsp'},
+    packages=setuptools.find_namespace_packages(include=['ibl.*'], exclude=['tests']),
     include_package_data=True,
     py_modules=['spikeglx', 'neuropixel'],
     python_requires=">=3.8",

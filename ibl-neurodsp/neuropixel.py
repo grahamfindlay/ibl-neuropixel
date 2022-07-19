@@ -9,7 +9,7 @@ import scipy.signal
 import numpy as np
 
 import spikeglx
-from neurodsp.utils import WindowGenerator
+from ibl.neurodsp.utils import WindowGenerator
 
 _logger = logging.getLogger('ibllib')
 
