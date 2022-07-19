@@ -24,7 +24,7 @@ setuptools.setup(
     ],
     install_requires=require,
     package_dir={'': 'ibl-neurodsp'},
-    packages=setuptools.find_namespace_packages(include=['ibl.*'], exclude=['tests']),
+    packages=setuptools.find_namespace_packages(where="ibl-neurodsp", exclude=['tests']),
     include_package_data=True,
     py_modules=['spikeglx', 'neuropixel'],
     python_requires=">=3.8",
